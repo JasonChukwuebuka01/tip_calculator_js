@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Ubuntu:wght@700&display=swap');
+
+
+
+
+
+
+*{
+ margin:0;    
+ padding:0;
+ font-weight:bold;
+ color:#fff;
+}
+
+
+
+body {
+    font-family: 'DynaPuff', cursive;
+    background:conic-gradient(at 0% 0%, snow, white);
+}
+
+
+label{
+    display:block;
+    font-size:1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:whitesmoke;
+    margin-bottom:3px;
+}
+
+
+.container{
+    margin:auto;
+    width:90%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items : center;
+    position:relative ;
+    
+}
+
+.container .calculator{
+    /*border:1px solid black;*/
+    width:400px;
+    padding-bottom:10px;
+    background:#36453B;
+    border-radius:6px 6px 6px;
+    box-shadow:0px 2px 5px 3px rgba(0,0,0,0.3);
+  
+}
+
+.container .calculator h1{
+    border-bottom:1px solid rgba(255, 255, 255,0.2);
+    text-align:center;
+    font-size:2.5rem;
+    padding:15px;
+    background:#596869;
+    
+}
+
+.container .calculator .group_box{
+   /*border:1px solid black*/
+    margin:10px 0;
+    padding:5px 10px;
+}
+
+
+.container .calculator .box1{
+    padding-top:20px;
+}
+
+.container .calculator .box3{
+    padding-bottom:20px;
+    border:none;
+    border-bottom:1px solid rgba(255, 255, 255,0.2);
+    position:relative;
+}
+
+
+.group_box button{
+   padding:15px;
+   border:none;
+   outline:none;
+   margin-right:2px;
+   background:#F5F9E9;
+
+}
+
+.group_box button i{
+    font-size:1.2rem;
+    color:black;
+}
+
+
+
+.group_box input{
+    width:78%;
+    padding:15px;
+    font-size:1.2rem;
+    border:none;
+    outline:none;
+    color:#596869;
+    text-decoration:none;
+    border-radius:0 5px 5px 0;
+    font-family: 'Ubuntu', sans-serif;
+    caret-color:#596869;
+
+}
+
+
+
+.group_box select{
+    width:100%;
+    padding:15px;
+    text-align:left;
+    font-size:1rem;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    color:#596869;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#choose{
+    position:absolute ;
+    top:42.5px;
+    left:29px;
+    z-index:2;
+    visibility:hidden;
+    color:#596869;
+    font-weight:500;
+    font-size: 0.97rem;
+}
+
+
+
+ #calculate{
+    display:block ;
+    width:60%;
+    margin:auto;
+    padding:15px;
+    font-size:1.3rem;
+    cursor:pointer;
+    background:#F5F9E9;
+    border:none;
+    outline:none;
+    font-family: 'Ubuntu', sans-serif;
+    color:#000;
+    transition: .5s;
+}
+
+
+
+
+
+#tip_amount{
+    position:absolute;
+    color:black;
+    bottom: 10px;
+    padding:15px;
+    border:1px solid black;
+    width:300px;
+    background:limegreen;
+    border:none;
+    visibility:hidden ;
+    text-align:center;
+}
+
+#tip_amount.active{
+    visibility:visible;
+    animation: fadein .5s, fadeout .5s 2.5s;
+}
+
+@keyframes fadein{
+    from{bottom:-30px; opacity:0;}
+    to{bottom:10px; opacity:1;}
+}
+
+@keyframes fadeout{
+    0%{bottom:10px; opacity:1;}
+    50%{bottom:5px; opacity:.5;}
+    70%{bottom:2px; opacity:.2;}
+    100%{bottom:-30px; opacity:0;}
+}
+
+
+
+
+@keyframes shake{
+    0%{transform:translate(3px,2px);}
+    30%{transform:translate(-3px,-2px);}
+    70%{transform:translate(3px,2px); background:#C2C1A5;}
+    100%{transform:translate(-3px,-2px);}
+}
+
+
+@keyframes shaker{
+    0%{transform:translate(3px,2px);}
+    30%{transform:translate(-3px,-2px);}
+    70%{transform:translate(3px,2px);}
+    100%{transform:translate(-3px,-2px);background:#C2C1A5;}
+}

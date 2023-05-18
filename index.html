@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./main.css">
+ <title>Tip Calculator</title>
+</head>
+<body>
+ 
+ <section class="container">
+      
+  <div class="calculator">
+     <h1>Tip calculator</h1>
+     
+     <div class="group_box box1">
+       <label for="bill_input">Bill Amount:</label>
+       <button class="dollar"><i class="fa fa-usd" aria-hidden="true"></i></button><input type="number" id="bill_input" autofocus >    
+     </div>
+     
+      <div class="group_box">
+        <label for="guest_input">Number of Guest:</label>
+        <button class="dollar"><i class="fa fa-male" aria-hidden="true"></i></button><input type="number" id="guest_input">    
+     </div>
+     
+      <div class="group_box box3">
+        <label for="guest_input">Service Quality:</label>
+       <select id ="quality">
+          <option selected disabled value="0">Choose</option>
+          <option value="0.3"> 30% - Outstanding</option>
+          <option value="0.20"> 20% - Good</option>
+          <option value="0.15"> 15% - its Ok</option>
+          <option value="0.10"> 10% - Bad</option>
+       </select>
+       <p id="choose">Choose</p>
+     </div>
+     <button id="calculate">Calculate</button>
+  </div>
+     
+ <div id="tip_amount"></div>
+      
+   
+</section>
+
+
+ <script src="./app.js"></script>
+</body>
+</html>

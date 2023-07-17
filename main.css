@@ -219,4 +219,8 @@ label{
     #calculate{
         font-size:1.1rem;
     }
+
+ .group_box input{
+    width:70%;
+ }
 }

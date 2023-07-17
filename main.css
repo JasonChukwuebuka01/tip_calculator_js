@@ -204,3 +204,19 @@ label{
     70%{transform:translate(3px,2px);}
     100%{transform:translate(-3px,-2px);background:#C2C1A5;}
 }
+@media (max-width:480px){
+    
+   .container .calculator h1{
+       font-size:2rem;
+   }
+    
+    
+ label{
+     font-size:1rem;
+ }
+    
+    
+    #calculate{
+        font-size:1.1rem;
+    }
+}

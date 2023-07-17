@@ -17,6 +17,7 @@
 body {
     font-family: 'DynaPuff', cursive;
     background:conic-gradient(at 0% 0%, snow, white);
+    overflow: hidden;
 }
 
 
